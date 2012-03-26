@@ -10,9 +10,9 @@ class Admin_IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $model = new Admin_Model_Hello;
+        $this->view->hello = $model->hello();
     }
-
 
 }
 
